@@ -59,8 +59,6 @@ firmware/   ESP32 sketch (Arduino core 3.x)
 4. Join the Wi-Fi `AURA-LIFT` and open `http://192.168.4.1`.
 5. **Unplug the 12 V adapter before stopping, uploading or resetting.**
 
-Full details: [`docs/bench-rig-guide.docx`](docs/bench-rig-guide.docx).
-
 ## Simulations
 
 - [AURA-LIFT Fault Simulation Suite](https://claude.ai/artifact/BTXu8A7y76FC132QK7H6j7)

@@ -1,7 +1,7 @@
 # AURA-LIFT: Electrical-Signature Diagnostics for Elevator Drives
 
 **Team Immortal** · KONE Elevate Hackathon 2026 · **Winner (1 of 5 teams)**
-Houshik R · Joshitha G · Charunethra S, Kalaignar Karunanidhi Institute of Technology, Coimbatore
+Houshik R · Joshitha V G · Charunethra S, Kalaignar Karunanidhi Institute of Technology, Coimbatore
 
 > **Question:** what can voltage and current alone prove about the health of an elevator drive?
 > Every drive already measures both signals, so a diagnostic built on them deploys as software, with nothing added to the machine.
@@ -14,8 +14,6 @@ Houshik R · Joshitha G · Charunethra S, Kalaignar Karunanidhi Institute of Tec
 | **Fault simulations** | Simulated | Six fault models on one 400 V elevator drive (capacitor ageing, inverter switch fault, rectifier phase loss, overcurrent, DC-bus overvoltage, supply sag). The fault edits the circuit and the solver produces the waveform. |
 
 The two layers are validated separately today. Linking them is the next step.
-
-<p align="center"><a href="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/docs/dashboard-trips.png"><img src="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/docs/dashboard-trips.png" alt="Live dashboard served by the ESP32: UP/DOWN pairing and per-trip phase averages" width="800"></a><br><sub>Live dashboard served by the ESP32: UP/DOWN pairing and per-trip phase averages (click to enlarge)</sub></p>
 
 ## Result: an evidence map, not a detection claim
 
@@ -30,19 +28,7 @@ The two layers are validated separately today. Linking them is the next step.
 
 All six faults are detectable. Only two can be traced to a cause, and the project shows where the evidence stops for the rest.
 
-<p align="center"><a href="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/docs/simulation-suite.png"><img src="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/docs/simulation-suite.png" alt="AURA-LIFT Fault Simulation Suite" width="800"></a><br><sub>AURA-LIFT Fault Simulation Suite (click to enlarge)</sub></p>
-
-## Gallery
-
-| Hardware wiring (12 V side) | Hardware wiring (breadboard side) |
-| --- | --- |
-| <a href="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/hardware/wiring-12v-side.png"><img src="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/hardware/wiring-12v-side.png" width="420"></a> | <a href="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/hardware/wiring-breadboard-side.png"><img src="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/hardware/wiring-breadboard-side.png" width="420"></a> |
-
-| Simulation: DC-link capacitor lab | Simulation: fault suite |
-| --- | --- |
-| <a href="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/docs/simulation-dc-link-capacitor.png"><img src="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/docs/simulation-dc-link-capacitor.png" width="420"></a> | <a href="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/docs/simulation-suite.png"><img src="https://raw.githubusercontent.com/joshithagopal3-cmd/aura-lift/main/docs/simulation-suite.png" width="420"></a> |
-
-## Limits (read this first)
+## Limits 
 
 - The rig is a **12 V DC proxy**, not a scaled elevator drive.
 - At 12 V the cruise currents are only tens of milliamps, and readings quantise near 0.01 A. The UP/DOWN separation shows the **method runs on real measurements**, not a calibrated load figure.
@@ -60,7 +46,7 @@ All six faults are detectable. Only two can be traced to a cause, and the projec
 ## Repository contents
 
 ```
-docs/       Project presentation, bench-rig guide, screenshots
+docs/       Project presentation and bench-rig guide
 hardware/   Wiring diagrams (12 V side and breadboard side)
 firmware/   ESP32 sketch (Arduino core 3.x)
 ```
@@ -77,5 +63,5 @@ Full details: [`docs/bench-rig-guide.docx`](docs/bench-rig-guide.docx).
 
 ## Simulations
 
-- AURA-LIFT Fault Simulation Suite: *(paste your shared link here)*
-- DC-Link Capacitor Lab: *(paste your shared link here)*
+- [AURA-LIFT Fault Simulation Suite](https://claude.ai/artifact/BTXu8A7y76FC132QK7H6j7)
+- [DC-Link Capacitor Lab](https://claude.ai/artifact/3S5nBWjyqjyChbmCHUqApi)
